@@ -1,11 +1,10 @@
 name: Build
 on:
-# watch:
-#types: started
 workflow_dispatch:
+
    run-name: Build
 jobs:
-  prepare_release:
+  #prepare_release:
     runs-on: ubuntu-20.04
     if: github.event.repository.owner.id == github.event.sender.id
     steps:

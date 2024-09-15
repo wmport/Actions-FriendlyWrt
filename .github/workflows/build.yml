@@ -1,6 +1,9 @@
+name: Build
+
 on:
-  watch:
-    types: started
+  workflow_dispatch:
+
+run-name: Build
 jobs:
   prepare_release:
     runs-on: ubuntu-20.04
